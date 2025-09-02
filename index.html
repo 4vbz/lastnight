@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ยืนยันตัวตน | Last Night</title>
+  <style>
+    /* พื้นฐานธีมมืด */
+    :root {
+      --bg-color: #0f0f0f;
+      --card-color: #1e1e1e;
+      --text-color: #ffffff;
+      --accent-color: #5865F2; /* Discord สีหลัก */
+      --border-color: #2c2c2c;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: var(--card-color);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      max-width: 400px;
+      width: 90%;
+      text-align: center;
+      border: 1px solid var(--border-color);
+    }
+
+    .container h1 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    .container p {
+      color: #aaaaaa;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: var(--accent-color);
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #4752c4;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 0.8em;
+      color: #777;
+    }
+
+    img.logo {
+      width: 80px;
+      margin-bottom: 20px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord Logo" class="logo"/>
+    <h1>ยืนยันตัวตนด้วย Discord</h1>
+    <p>คลิกปุ่มด้านล่างเพื่อยืนยันตัวตนของคุณและเข้าร่วมเซิร์ฟเวอร์</p>
+    <a href="/auth/discord" class="btn">🔒 ยืนยันตัวตนผ่าน Discord</a>
+    <div class="footer">
+      © 2025 Last Night | Discord Verification System
+    </div>
+  </div>
+</body>
+</html>
